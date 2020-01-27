@@ -1,0 +1,676 @@
+/*SETTING MY STARSWITH THE CORRECT PADDINGS AND  COLORS AS WELL AS POSITION.*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/*NECESSARY IDs USED FOR MY DOTS AS WELL AS SOME HEADINGS AND TEXT.*/
+#h1
+{
+    color: black;
+    font-weight: bold;
+}
+
+#grey_text
+{
+    padding-top: 12px;
+    color: darkgray;  
+}
+
+#grey_text_bold
+{
+    padding-top: 12px;
+    color: darkgray;
+    font-weight: bold;
+}
+
+#red
+{
+    color:darkred; 
+    font-size: 200%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#pad_online
+{
+    padding-left:9px;
+}
+#pad
+{
+    padding-top:12px;
+}
+#dot1 {
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.52;
+  transition: 0.3s;
+}
+#dot1:hover 
+{
+    opacity: 1;
+}
+#dot2 {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot2:hover 
+{
+    opacity: 1;
+}
+#dot3 {
+  height: 25px;
+  width: 25px;
+  background-color: darkgreen;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot3:hover 
+{
+    opacity: 1;
+}
+#dot4 {
+  height: 25px;
+  width: 25px;
+  background-color: darkgoldenrod;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot4:hover 
+{
+    opacity: 1;
+}
+#dot5 {
+  height: 25px;
+  width: 25px;
+  background-color: darkred;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot5:hover 
+{
+    opacity: 1;
+}
+#dot6 {
+  height: 25px;
+  width: 25px;
+  background-color: darkslateblue;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot6:hover 
+{
+    opacity: 1;
+}
+#dot7 {
+  height: 25px;
+  width: 25px;
+  background-color: deeppink;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot7:hover 
+{
+    opacity: 1;
+}
+#dot8 {
+  height: 25px;
+  width: 25px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot8:hover 
+{
+    opacity: 1;
+}
+#dot9 {
+  height: 25px;
+  width: 25px;
+  background-color: chocolate;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot9:hover 
+{
+    opacity: 1;
+}
+#dot10 {
+  height: 25px;
+  width: 25px;
+  background-color: darkslategray;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot10:hover 
+{
+    opacity: 1;
+}
+#dot11 {
+  height: 25px;
+  width: 25px;
+  background-color: firebrick;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot11:hover 
+{
+    opacity: 1;
+}
+#dot12 {
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot12:hover 
+{
+    opacity: 1;
+}
+#dot13 {
+  height: 25px;
+  width: 25px;
+  background-color: sandybrown;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot13:hover 
+{
+    opacity: 1;
+}
+#dot14 {
+  height: 25px;
+  width: 25px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot14:hover 
+{
+    opacity: 1;
+}
+#dot15 {
+  height: 25px;
+  width: 25px;
+  background-color: darksalmon;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot15:hover 
+{
+    opacity: 1;
+}
+#dot16 {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot16:hover 
+{
+    opacity: 1;
+}
+#dot17 {
+  height: 25px;
+  width: 25px;
+  background-color: indianred;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot17:hover 
+{
+    opacity: 1;
+}
+#dot18 {
+  height: 25px;
+  width: 25px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#dot18:hover 
+{
+    opacity: 1;
+}
+
+#pad_left
+{
+    padding-left:-10px;
+}
+
+#pad_l
+{
+    padding-left:20px;
+}
+
+#text_size
+{ 
+    font-size: 70%;
+}
+
+#searchbar{ 
+     margin-left: 15%; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+/*My Bootstrap for rounded button*/
+
+.btn {
+  margin-left: -20px;
+  margin-right: 30px;
+}
+/* Boostrap Buttons Styling */
+
+.btn-0 {
+  font-family: Arial;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid ;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.btn-0:hover {
+  color: #FFF;
+  background: rgba(58, 133, 191, 0.75);
+  border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+.btn-add {
+  font-family: Arial;
+  font-size: 13px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid black;
+  border-radius: 40px;
+  background: black;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.btn-add:hover {
+  color: #FFF;
+  background: rgba(58, 133, 191, 0.75);
+  border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+.content 
+{
+  max-width: 500px;
+  margin: auto;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/*---------------------------------*/
+
+body{
+  background: #333;
+  width: 430px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.preview{
+  width: 370px;
+  height: 190px;
+  border: solid 10px #fff;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 5px 5px;
+  background-size: 225px 70px;
+  position: relative;
+  float: left;
+  display: inline;
+  top: 0;
+  border-radius: 50px;
+  z-index: 99999;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000;
+}
+
+input[type='radio']:hover{
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);    
+}
+
+.red{
+  background: red;
+}
+
+.red:checked{
+  background: linear-gradient(brown, red)
+}
+
+.red:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 red);
+  filter: opacity(.5) drop-shadow(0 0 0 red);
+}
+
+.green{
+  background: green;
+}
+
+.green:checked{
+  background: linear-gradient(green, lime);
+}
+
+.green:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 green);
+  filter: opacity(.5) drop-shadow(0 0 0 green);
+}
+
+.yellow{
+  background: yellow;
+}
+
+.yellow:checked{
+  background: linear-gradient(orange, yellow);
+}
+
+.yellow:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 yellow);
+  filter: opacity(.5) drop-shadow(0 0 0 yellow);
+}
+
+.purple{
+  background: purple;
+}
+
+.purple:checked{
+  background: linear-gradient(purple, violet);
+}
+
+.purple:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 purple);
+  filter: opacity(.5) drop-shadow(0 0 0 purple);
+}
+
+.pink{
+  background: pink;
+}
+
+.pink:checked{
+  background: linear-gradient(pink, violet);
+}
+
+.pink:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 pink);
+  filter: opacity(.5) drop-shadow(0 0 0 pink);
+}
+
+.blue{
+  background: blue;
+}
+
+.blue:checked{
+  background: linear-gradient(blue, turquoise)
+}
+
+.blue:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 blue);
+  filter: opacity(.5) drop-shadow(0 0 0 blue);
+}
+
+.lightgreen{
+  background: lightgreen;
+}
+
+.lightgreen:checked{
+  background: linear-gradient(lightgreen, green)
+}
+
+.lightgreen:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 lightgreen);
+  filter: opacity(.5) drop-shadow(0 0 0 lightgreen);
+}
+
+.black{
+  background: black;
+}
+
+.black:checked{
+  background: linear-gradient(black, black)
+}
+
+.black:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 black);
+  filter: opacity(.5) drop-shadow(0 0 0 black);
+}
+
+.darksalmon{
+  background: darksalmon;
+}
+
+.darksalmon:checked{
+  background: linear-gradient(brown, darksalmon)
+}
+
+.darksalmon:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 darksalmon);
+  filter: opacity(.5) drop-shadow(0 0 0 darksalmon);
+}
+
+.aqua{
+  background: aqua;
+}
+
+.aqua:checked{
+  background: linear-gradient(aqua, blue)
+}
+
+.aqua:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 aqua);
+  filter: opacity(.5) drop-shadow(0 0 0 aqua);
+}
+
+.darkslategray{
+  background: darkslategray;
+}
+
+.darkslategray:checked{
+  background: linear-gradient(grey, darkslategray)
+}
+
+.darkslategray:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 darkslategray);
+  filter: opacity(.5) drop-shadow(0 0 0 darkslategray);
+}
+
+.chocolate{
+  background: chocolate;
+}
+
+.chocolate:checked{
+  background: linear-gradient(chocolate, brown)
+}
+
+.chocolate:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 chocolate);
+  filter: opacity(.5) drop-shadow(0 0 0 chocolate);
+}
+
+.deeppink{
+  background: deeppink;
+}
+
+.deeppink:checked{
+  background: linear-gradient(deeppink, pink)
+}
+
+.deeppink:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 deeppink);
+  filter: opacity(.5) drop-shadow(0 0 0 deeppink);
+}
+
+.darkslateblue{
+  background: darkslateblue;
+}
+
+.darkslateblue:checked{
+  background: linear-gradient(darkslateblue, blue)
+}
+
+.darkslateblue:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 darkslateblue);
+  filter: opacity(.5) drop-shadow(0 0 0 darkslateblue);
+}
+
+.firebrick{
+  background: firebrick;
+}
+
+.firebrick:checked{
+  background: linear-gradient(firebrick, brown)
+}
+
+.firebrick:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 firebrick);
+  filter: opacity(.5) drop-shadow(0 0 0 firebrick);
+}
+
+.violet{
+  background: violet;
+}
+
+.violet:checked{
+  background: linear-gradient(violet, red)
+}
+
+.violet:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 violet);
+  filter: opacity(.5) drop-shadow(0 0 0 violet);
+}
+
+.turquoise{
+  background: turquoise;
+}
+
+.turquoise:checked{
+  background: linear-gradient(turquoise, black)
+}
+
+.turquoise:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 turquoise);
+  filter: opacity(.5) drop-shadow(0 0 0 turquoise);
+}
+
+.orange{
+  background: orange;
+}
+
+.orange:checked{
+  background: linear-gradient(orange, red)
+}
+
+.orange:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 orange);
+  filter: opacity(.5) drop-shadow(0 0 0 orange);
+}
+
+img{
+  width: 250px;
+  height: 100px;
+  position: relative;
+}
+
+.label{
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top: 170px;
+  margin-left: 130px;
+}
+
+::selection{
+  background: #000;
+}
